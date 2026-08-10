@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(45deg,gray , rgb(37, 37, 37));
+}
+a{
+    text-decoration:none;
+    color:black;
+    background-color: white;
+    margin:20px;
+    padding:0px 20px;
+    transition:0.5s;
+}
+a:hover{
+    color:white;
+    background-color: black;
+    transition:0.5s;
+}
+.border{
+    border:solid 1px black;
+    width:650px;
+}
+
+h1{
+    margin:100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+p{
+    font-size:20px;
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:20px;
+}
+li{
+    list-style-type: none;
+    margin:50px;
+}
+h2{
+    margin:30px;
+    border:solid 1px black;
+    background-color:black;
+    color:white;
+    width:fit-content;
+    padding:0px 20px;
+}
+.box1{
+  width: 50px;
+  height: 50px;
+  background: red;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(600px);
+  }
+}
+.box2 {
+  width: 60px;
+  height: 60px;
+  background: green;
+  margin-left:300px;
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background: purple;
+  border-radius: 50%;
+  margin:30px 50px 0px 300px;
+  animation: fade 2s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.box3 {
+  width: 50px;
+  height: 50px;
+  background: orange;
+  animation: grow 2s infinite alternate;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2);
+  }
+}
+.box4{
+  width: 80px;
+  height: 80px;
+  background: red;
+  animation: color 3s infinite;
+}
+
+@keyframes color {
+  0% {
+    background: red;
+  }
+
+  50% {
+    background: blue;
+  }
+
+  100% {
+    background: green;
+  }
+}

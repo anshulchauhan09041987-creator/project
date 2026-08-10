@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    <a class="home" href="../project2/simple.html">home<a>
+    <form class="form">
+
+        <h1 id="heading">Create an Account</h1>
+
+        <p id="description">Please fill in the details below to register.</p>
+
+        <label for="email"><b>Email</b></label>
+        <input class="input-box" type="email" placeholder="Enter your email" name="email" id="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input class="input-box" type="password" placeholder="Enter your password" name="psw" id="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input class="input-box" type="password" placeholder="Repeat your password" name="psw-repeat" id="psw-repeat"  required>
+
+        <p class="gender-title"><b>Gender</b></p>
+
+        <div class="gender">
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" value="other" id="other">
+            <label for="other">Other</label>
+        </div>
+
+        <hr>
+
+        <p class="terms">By creating an account, you agree to our<a href="#">Terms & Privacy</a>.</p>
+
+        <button type="submit" class="registerbtn">Register</button>
+
+    </form>
+
+</body>
+</html>
+```
